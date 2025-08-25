@@ -16,7 +16,7 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: "C#",
+        name: "React",
         path: "/assets/logos/csharp.svg",
       },
       {
