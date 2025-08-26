@@ -95,7 +95,7 @@ const Row = ({ guess, targetWord, isSubmitted }) => {
 
     if (isSubmitted) {
       if (targetWord[i] === char) {
-        bgColor = "bg-[#ba74a6]"; // Correct letter, correct position
+        bgColor = "bg-[#68d391]"; // Correct letter, correct position
       } else if (targetWord.includes(char)) {
         bgColor = "bg-yellow-500"; // Correct letter, wrong position
       } else {
@@ -108,7 +108,7 @@ const Row = ({ guess, targetWord, isSubmitted }) => {
         key={i}
         animate={{ scale: char ? 1.05 : 1 }}
         transition={{ duration: 0.1 }}
-        className={`w-10 h-10 md:w-12 md:h-12 border-2 border-gray-600 rounded-md flex items-center justify-center text-2xl font-bold uppercase text-white ${bgColor}`}
+        className={`w-10 h-10 md:w-12 md:h-12 border-2 border-[#cec4c4] rounded-md flex items-center justify-center text-2xl font-bold uppercase text-white ${bgColor}`}
       >
         {char}
       </motion.div>
