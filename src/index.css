@@ -139,3 +139,14 @@ body {
 .field-input-focus {
   @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/20;
 }
+
+.feature-description {
+  margin-bottom: 1rem; /* Adds some space between points */
+  line-height: 1.6;
+}
+
+.subheading {
+  /* This class applies the color to your bolded heading */
+  color: #007bff; /* A nice blue, change to whatever you like */
+  margin-right: 8px; /* Adds a small space after the heading */
+}
