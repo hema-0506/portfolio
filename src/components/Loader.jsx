@@ -4,7 +4,7 @@ import React from 'react'
 const Loader = () => {
   const {progress} = useProgress();
   return (
-    <Html center className='text-xl font-bold text-center'>{progress}% Loaded</Html>
+    <Html center className='text-xl font-bold text-center'>{Math.round(progress)}% Loaded</Html>
   )
 }
 
