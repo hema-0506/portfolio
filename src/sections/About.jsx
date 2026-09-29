@@ -60,7 +60,7 @@ const About = () => {
        <div className='grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12'>
         {/* Grid 1 */}
         <div className='flex items-end grid-default-color grid-2'>
-          <img src="/assets/grid-1-code.jpg" alt="" 
+          <img src="/assets/grid-1-code.jpg" alt="" aria-hidden="true" 
           className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5]"
           />
            <div className="z-10">
@@ -136,37 +136,37 @@ const About = () => {
             </p>
             <Card
                 style={{ rotate: "75deg", top: "30%", left: "20%" }}
-                text="JavaScript"
+                text="Golang"
                 containerRef={grid2Container}
               />
               <Card
                 style={{ rotate: "-30deg", top: "60%", left: "45%" }}
-                text="next.js"
+                text="React Native"
                 containerRef={grid2Container}
               />
               <Card
                 style={{ rotate: "90deg", bottom: "30%", left: "70%" }}
-                text="HTML"
+                text="MERN Stack"
                 containerRef={grid2Container}
               />
               <Card
                 style={{ rotate: "-75deg", top: "25%", left: "0%" }}
-                text="Tailwind CSS"
+                text="AWS"
                 containerRef={grid2Container}
               />
               <Card
                 style={{ rotate: "20deg", top: "10%", left: "38%" }}
-                text="Python"
+                text="PyTorch"
                 containerRef={grid2Container}
               />
               <Card
                 style={{ rotate: "30deg", top: "70%", left: "70%" }}
-                image="assets/logos/css-3.svg"
+                image="assets/logos/docker.svg"
                 containerRef={grid2Container}
               />
               <Card
                 style={{ rotate: "-45deg", top: "55%", left: "0%" }}
-                text="CSS"
+                text="Python"
                 containerRef={grid2Container}
               />
               <Card
@@ -176,7 +176,7 @@ const About = () => {
               />
               <Card
                 style={{ rotate: "-70deg", top: "8%", left: "74%" }}
-                image="assets/logos/javascript.svg"
+                image="assets/logos/mongodb.svg"
                 containerRef={grid2Container}
               />
           </div>

@@ -16,25 +16,7 @@ const App = () => {
       <section id='projects'><Projects/></section>      
       <section id='education'><Education/></section>
       <section id='contact'><Contact/></section>
-      <section id='about'><Footer/></section>
-      <section className='min-h-screen'></section>
-      <section className='min-h-screen'></section>
-      <section className='min-h-screen'></section>
-      <section className='min-h-screen'></section>
-      <section className='min-h-screen'></section>
-      <section className='min-h-screen'></section>
-      <section className='min-h-screen'></section>
-      <section className='min-h-screen'></section>
-      <section className='min-h-screen'></section>
-      
-      
-      
-      
-      {/*
-      
-      <Skills/>
-      <Experience/>
-      */}
+      <Footer/>
     </div>
   )
 }

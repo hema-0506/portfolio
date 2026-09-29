@@ -1,23 +1,23 @@
 import React, { useState } from 'react'
 import {motion } from 'motion/react'
 
-function Navigation(){
+function Navigation({ onNavigate }){
   return(
     <ul className='nav-ul'>
       <li className='nav-li'>
-        <a href="#home" className='nav-link'>Home</a>
+        <a href="#home" className='nav-link' onClick={onNavigate}>Home</a>
       </li>
       <li className='nav-li'>
-        <a href="#about" className='nav-link'>About</a>
+        <a href="#about" className='nav-link' onClick={onNavigate}>About</a>
       </li>
       <li className='nav-li'>
-        <a href="#projects" className='nav-link'>Projects</a>
+        <a href="#projects" className='nav-link' onClick={onNavigate}>Projects</a>
       </li>
       <li className='nav-li'>
-        <a href="#education" className='nav-link'>Education</a>
+        <a href="#education" className='nav-link' onClick={onNavigate}>Education</a>
       </li>
       <li className='nav-li'>
-        <a href="#contact" className='nav-link'>Contact</a>
+        <a href="#contact" className='nav-link' onClick={onNavigate}>Contact</a>
       </li>
     </ul>
   )
@@ -45,8 +45,8 @@ const Navbar = () => {
         style={{maxHeight:"100vh"}}
         transition={{duration:1}}
         >
-        <nav pb-5>
-          <Navigation/>
+        <nav className='pb-5'>
+          <Navigation onNavigate={() => setIsOpen(false)}/>
         </nav>
       </motion.div>)}
     </div>

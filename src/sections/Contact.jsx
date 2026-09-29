@@ -28,7 +28,6 @@ const Contact = () => {
     setIsLoading(true);
 
     try {
-      console.log("From submitted:", formData);
       await emailjs.send(
         "service_e0qlquo",
         "template_blj6d6l",
@@ -43,7 +42,7 @@ const Contact = () => {
       );
       setIsLoading(false);
       setFormData({ name: "", email: "", message: "" });
-      showAlertMessage("success", "You message has been sent!");
+      showAlertMessage("success", "Your message has been sent!");
     } catch (error) {
       setIsLoading(false);
       console.log(error);
@@ -64,13 +63,12 @@ const Contact = () => {
         <div className="flex flex-col items-start w-full gap-5 mb-10">
           <h2 className="text-heading">Let's Talk</h2>
           <p className="font-normal text-neutral-400">
-            Whether you're looking to build a new website, improve your existing
-            platform, or bring a unique project to life, I'm here to help
+            Hiring, planning a backend or full-stack build, or just want to talk engineering? Send me a note and I'll get back to you.
           </p>
         </div>
         <form className="w-full" onSubmit={handleSubmit}>
           <div className="mb-5">
-            <label htmlFor="name" className="feild-label">
+            <label htmlFor="name" className="field-label">
               Full Name
             </label>
             <input
@@ -86,7 +84,7 @@ const Contact = () => {
             />
           </div>
           <div className="mb-5">
-            <label htmlFor="email" className="feild-label">
+            <label htmlFor="email" className="field-label">
               Email
             </label>
             <input
@@ -102,17 +100,15 @@ const Contact = () => {
             />
           </div>
           <div className="mb-5">
-            <label htmlFor="message" className="feild-label">
+            <label htmlFor="message" className="field-label">
               Message
             </label>
             <textarea
               id="message"
               name="message"
-              type="text"
               rows="4"
               className="field-input field-input-focus"
               placeholder="Share your thoughts..."
-              autoComplete="message"
               value={formData.message}
               onChange={handleChange}
               required
